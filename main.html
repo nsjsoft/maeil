@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* border-collapse */
+        
+        div {
+            border: 1px solid #bcbcbc;
+        }
+        
+        .jb-table {
+            display: table;
+            width: 100%;
+            border-collapse: separate;
+            /* border-collapse: collapse; */
+        }
+        
+        .jb-table-row {
+            display: table-row;
+        }
+        
+        .jb-table-cell {
+            display: table-cell;
+            padding: 0px 20px;
+            height: 150px;
+        }
+        
+        .jb-top {
+            vertical-align: top;
+        }
+        
+        .jb-middle {
+            vertical-align: middle;
+        }
+        
+        .jb-bottom {
+            vertical-align: bottom;
+        }
+        /*
+        wrap_box1 {
+            padding: 10px;
+            border: 1px solid blue;
+            height: 200px;
+            border-collapse: collapse;
+        }
+        
+        .box1 {
+            border: 1px solid blue;
+            width: 100px;
+            height: 100px;
+            border-collapse: collapse;
+        }
+        */
+        /*
+            table : <table> 요소처럼 표현합니다.
+            table-caption : <caption> 요소처럼 표현합니다.
+            table-column-group : <colgroup> 요소처럼 표현합니다.
+            table-header-group : <thead> 요소처럼 표현합니다.
+            table-footer-group : <tfoot> 요소처럼 표현합니다.
+            table-row-group : <tbody> 요소처럼 표현합니다.
+            table-cell : <td> 요소처럼 표현합니다.
+            table-column : <col> 요소처럼 표현합니다.
+            table-row : <tr> 요소처럼 표현합니다.
+        */
+    </style>
+
+    <script>
+        var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+
+        for (var word in mobileKeyWords){
+            console.log(word + "=>" + mobileKeyWords[word]);
+
+            if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+                location.href = "보내고 싶은 모바일 경로";
+                break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="jb-table">
+        <div class="jb-table-row">
+            <div class="jb-table-cell">
+                <p>Lorem</p>
+            </div>
+            <div class="jb-table-cell">
+                <p>Ipsum</p>
+            </div>
+            <div class="jb-table-cell">
+                <p>Dolor</p>
+            </div>
+        </div>
+        <div class="jb-table-row">
+            <div class="jb-table-cell">
+                <p>Lorem</p>
+            </div>
+            <div class="jb-table-cell">
+                <p>Ipsum</p>
+            </div>
+            <div class="jb-table-cell">
+                <p>Dolor</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="wrap_box1">
+        <div class="box1">1</div>
+        <div class="box1">2</div>
+        <div class="box1">3</div>
+    </div> -->
+
+
+</body>
+
+</html>

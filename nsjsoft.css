@@ -1,0 +1,9 @@
+var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+for (var word in mobileKeyWords){
+    console.log(word);
+    if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+        location.href = "보내고 싶은 모바일 경로";
+        break;
+    }
+
+}
