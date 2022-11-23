@@ -1,0 +1,9 @@
+.idea/
+emoji/node_modules/
+es6-project/dist/
+es6-project/node_modules/
+mongoose-exam/node_modules/
+myapp/node_modules/
+rest_api-exam/node_modules/
+socketio-chat/node_modules/
+js/node_modules/
